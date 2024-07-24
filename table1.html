@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> table</title>
+    <style>
+        table {
+            border-style: solid;
+            background-color: aquamarine;
+            border-collapse: collapse;
+            width: 900px;
+            height: 400px;
+            text-align: center;
+        }
+
+        th {
+            border-style: solid;
+            
+        }
+    
+    </style>
+</head>
+<body>
+<table>
+    <caption><h1>LAYOUT ONE</h1></caption>
+    <!-- row 1 -->
+    <tr>
+        <th rowspan="1">A</th>
+        <th colspan="2">B</th>
+    </tr >
+    <!-- row 2 -->
+<tr>
+        <th colspan="2">C</th>
+        <th rowspan="2">D</th>
+    </tr>
+    <!-- row 3 -->
+    <tr>
+        <th rowspan="1">E</th>
+        <th rowspan="1">F</th>
+    </tr>
+</table>
+</body>
+</html>
