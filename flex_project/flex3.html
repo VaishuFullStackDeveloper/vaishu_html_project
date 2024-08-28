@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+.main-container{
+ width:100vw;
+ height: 100vh;
+ border: 1px black solid;   
+ display: flex; 
+ flex-direction: column;   
+ 
+}
+.row-one{
+ width: 100%; 
+ height: 50%;
+ border: 1px black solid;
+ display: flex; 
+ flex-direction: row;   
+}
+.column-one{
+width: 50%; 
+ height: 100%;
+ border: 1px black solid;
+ display: flex; 
+ flex-direction:column;  
+
+}
+.column-two{
+width: 50%; 
+ height: 100%;
+ border: 1px black solid;
+ display: flex; 
+ flex-direction:column;  
+   
+}
+.one{
+ display: grid;   
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+ grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.row-two{
+ width: 100%; 
+ height: 50%;
+ border: 1px black solid;
+ display: flex;
+ flex-direction: row;    
+}
+    </style>
+</head>
+<body>
+ <div class="main-container">
+   <div class="row-one">
+    <div class="column-one"></div>
+    <div class="column-two">
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+    </div>
+   </div>
+   <div class="row-two"></div>
+
+ </div>   
+    
+</body>
+</html>
