@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        table {
+            width: 100vw;
+            border: solid;
+        }
+
+        /* header css */
+        .header {
+            height: 8vh;
+            font-size: large;
+            background-color: #179BAE;
+        }
+
+        /* row-one-css */
+
+        .row-one {
+
+            height: 35vh;
+            background-color: #F7B5CA;
+            border: double;
+            text-align: center;
+        }
+
+        /* row-two-css */
+
+        .row-two {
+
+            height: 30vh;
+            background-color: #91DDCF;
+            border: double;
+        }
+
+        /* row-three-css */
+        .row-three {
+
+            height: 50vh;
+            width: 100vw;
+            background-color: #c9eae5;
+            border: double;
+            gap: 10px;
+        }
+
+        /* footer css */
+        .footer {
+            background-color: aquamarine;
+            height: 8vh;
+            text-align: center;
+        }
+
+        p {
+            font-size: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <!-- header-->
+        <tr class="header">
+            <th> <a href="#home">Home</a></th>
+            <th><a href="#about">About</a> </th>
+            <th><a href="#project"> Project</a></th>
+            <th><a href="#conatct">Contact</a></th>
+        </tr>
+        <!--first row -->
+        <tr id="home">
+            <td class="row-one" colspan="4">
+                <i>
+                    <p>WELCOME TO MY PORTFOLIO</p>
+                </i>
+            </td>
+
+        </tr>
+        <!-- second row -->
+        <tr id="about">
+            <td class="row-two" colspan="4">
+                <ul>
+                    <li> My self vaishali,T,Dewase by working proffesion
+                        I'm full stack developer.</li>
+                    <br>
+                    <li> I'm expert in Mobile Development & IOS Developement,
+                        also intreasted in front web Development.</li>
+                    <br>
+                    <li> With the help of Hyper Text Markup language(HTML)
+                        and Cascading Style Sheets(CSS),</li>
+                    <br>
+                    <li>I maked various projects.Click here to visit my HTML and CSS Projects.</li>
+
+                </ul>
+            </td>
+        </tr>
+        <!-- third row -->
+        <tr id="project">
+            <td class="row-three" colspan="4">
+                <a href="../  html_projects/resume_project/resume.html"><img src="./assets/images/re-sume.jpeg"
+                        width="150px" height="150px"></a>
+                <a href="../  html_projects/form_projects/form1.html"><img src="./assets/images/regi-ster.avif"
+                        width="150px" height="150px"></a>
+                <a href="../ html_projects/movies_project/top_movies .html"><img src="./assets/images/movies.jpeg"
+                        width="150px" height="150px"></a>
+                <a href="../ html_projects/flex_project/flex.html"><img src="./assets/images/flex img.jpg" width="150px"
+                        height="150px"></a>
+            </td>
+        </tr>
+
+        <!-- footer -->
+        <tfoot class=" footer">
+            <tr id="contact">
+                <td><a href="https://github.com/VaishuFullStackDeveloper/vaishu_html_project.git"> Github</a></td>
+                <td> <a href="linkedin">LinkedIn</a></td>
+                <td> Insta</td>
+                <td> Skype</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>layout</title>
+    <style>
+        table {
+            width: 90vw;
+            height: 150vh;
+            background-color: white;
+            margin-left: 5vw;
+            border-style: solid;
+
+
+        }
+
+        tr {
+            width: 100%;
+            background-color: rgb(240, 241, 236);
+
+        }
+
+        .row-one {
+            height: 50px;
+        }
+
+        .row-two {
+            height: 20vh;
+
+        }
+
+        .row-three {
+            height: 20vh;
+        }
+
+        .row-four {
+            height: 40vh;
+        }
+
+        .row-one-column {
+            width: 25%;
+            height: 50px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+
+
+        }
+
+        .row-two-column {
+            width: 25%;
+            height: 20vh;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+
+
+
+
+        }
+
+        .row-three-column {
+            width: 25%;
+            height: 40vh;
+            background-color: rgb(240, 201, 201);
+            border-style: solid;
+            border-width: 2px;
+
+
+        }
+
+        .row-four-column {
+            width: 25%;
+            height: 40vh;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+
+
+        }
+
+        .row-one-column-images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .row-one-column-images {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .row-two-column-images- {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+
+
+        }
+
+        .row-three-column-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: right;
+
+        }
+    </style>
+</head>
+
+<body style="margin: 0" ;>
+    <table>
+        <tr class="row-one">
+            <td class="row-one-column">
+                <div class="row-one-column-images">
+                    <img src="../../assets/images/leh-1.png" width="350px" height="160px">
+
+                </div>
+            </td>
+            <td class="row-one-column">
+                <div class="row-one-column-images">
+                    <img src="../../assets/images/lah-3.jpg" width="350px" height="160px">
+
+                </div>
+
+            </td>
+            <td class="row-one-column">
+                <div class="row-one-column-images">
+                    <img src="../../assets/images/leh-4.jpg" width="300px" height="160px">
+
+                </div>
+            </td>
+            <td class="row-one-column">
+                <div class="row-one-column-images-">
+                    <img src="../assets/images/leh-5.jpg" width="300px" height="160px">
+
+                </div>
+            </td>
+        </tr>
+        <tr class="row-two">
+            <td class="row-two-column" rowspan="2" colspan="2">
+                <div class="row-two-column-images">
+                    <img src="../../assets/images/leh-6.jpg" width="710px" height="370px">
+
+                </div>
+
+            </td>
+            <td class="row-two-column" colspan="2">
+
+                <div>
+                    <i>
+                        <h1>“Ladakh teaches us that true freedom lies in embracing the present moment.”</h1>
+                    </i>
+
+                </div>
+            </td>
+        </tr>
+        <tr class="row-three">
+            <td class="row-two-column" colspan="2">
+                <div class="row-two-column-images">
+                    <img src="../../assets/images/leh1.png" width="610px" height="210px">
+
+                </div>
+            </td>
+
+        </tr>
+        <tr class="row-four">
+            <td class="row-three-column" colspan="4">
+                <div class="row-three-column-image">
+                    <img src="">
+                    <h2>Ladakh is most famous for breathtaking landscapes, 
+                        <br>the crystal clear skies, the highest mountain
+                        passes, <br>thrilling adventure activities,<br> Buddhist Monasteries and festivals.</h2>
+                    <img src="../../assets/images/collage.webp" height="300px" width="400px">
+
+                </div>
+            </td>
+        </tr>
+        <tr class="row-four">
+            <td class="row-three-column" colspan="4"></td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>

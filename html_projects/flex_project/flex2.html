@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        /* main-container-styling  */
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+
+        }
+/* row-one-styling */
+        .row-one {
+            width: 100%;
+            height: 50%;
+            border: solid;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+
+        }
+        /* row-one-one-styling */
+.row-one-one{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+/* row1-styling */
+.row1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:flex-start ; 
+    
+    align-items: center;
+   
+}
+/*  row2-styling*/
+.row2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:flex-end;
+    
+    align-items: center;
+   
+} 
+.one{
+    width: 40%;
+    height: 90%;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+.one1{
+    width: 40%;
+    height: 90%;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+/* row-one-two-styling */
+.row-one-two{
+            width: 50%;
+            height: 100%;
+         display: grid;  
+         grid-template-columns: 1fr 1fr 1fr; 
+         grid-template-rows:1fr 1fr 1fr;
+         border: 1px solid black;
+        }
+        .two{
+            border: 1px solid black;  
+        }
+        .row-two {
+            width: 100%;
+            height: 50%;
+            border: solid;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows:1fr 1fr 1fr;
+        }
+        /*row-two-one-styling  */
+        .row-two-one{
+            display: grid;  
+            grid-template-columns:1fr 1fr 1fr;
+            border: 1px solid black;
+        }
+        .row-two-two{
+            display: grid;  
+            grid-template-columns:1fr 2fr ; 
+            border: 1px solid black;  
+        }
+        .two{
+            border: 1px solid black;   
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="row-one">
+            <div class="row-one-one">
+                <div class="row1">
+                    <div class="one"></div>
+                </div>
+                <div class="row2">
+                    <div class="one1"></div>
+                </div>
+            </div>
+            <div class="row-one-two">
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+        </div>
+        <div class="row-two">
+            <div class="row-two-one">
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="row-two-two">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="row-two-two">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
