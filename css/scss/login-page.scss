@@ -1,0 +1,72 @@
+$primary-color:rgba(247, 201, 201, 0.986);
+ 
+@mixin button($xxxx,$yyyy){
+width: 100%;
+padding: 10%;
+background-color: $xxxx;
+border: solid;
+color: white;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+
+&:hover{
+    background-color: $yyyy;
+}
+}
+
+
+ .Reset-btn{
+    
+    @include button(blue,green) 
+ } 
+ .sign-up-btn{
+    @include button(blue,yellow) 
+ }
+ .submit-btn{
+    @include button(blue,red) 
+ }
+ 
+ .login-btn-parent{
+    @include button(blue,rgb(200, 64, 87))  
+}
+
+
+
+
+.container {
+    background:$primary-color;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.gender {
+    display: inline-flex;
+}

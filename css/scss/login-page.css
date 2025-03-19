@@ -1,0 +1,95 @@
+.Reset-btn {
+  width: 100%;
+  padding: 10%;
+  background-color: blue;
+  border: solid;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Reset-btn:hover {
+  background-color: green;
+}
+
+.sign-up-btn {
+  width: 100%;
+  padding: 10%;
+  background-color: blue;
+  border: solid;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign-up-btn:hover {
+  background-color: yellow;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10%;
+  background-color: blue;
+  border: solid;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: red;
+}
+
+.login-btn-parent {
+  width: 100%;
+  padding: 10%;
+  background-color: blue;
+  border: solid;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-btn-parent:hover {
+  background-color: rgb(200, 64, 87);
+}
+
+.container {
+  background: rgba(247, 201, 201, 0.986);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  margin-left: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.gender {
+  display: inline-flex;
+}
+
+/*# sourceMappingURL=login-page.css.map */

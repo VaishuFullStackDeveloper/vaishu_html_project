@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+/* / Basic Styling / */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:lightslategray; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;    
+  text-align: center;
+}
+
+/* / Projects Container / */
+.projects {
+  display: flex;
+  flex-wrap: wrap;            
+  justify-content: center;    
+  gap: 20px;                
+  padding: 20px;
+  background-color:white; 
+  border-radius: 8px;
+  max-width: 1200px;
+  width: 100%;
+ 
+}
+
+/* / Project Box Style / */
+.project-box {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 20px); 
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-box a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff007f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  
+}
+
+.project-box a:hover {
+  background-color:lightslategray;
+}
+
+
+
+
+/* / Responsive Styles / */
+@media (max-width: 1024px) {
+  .project-box {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .project-box {
+    width: 100%; 
+  }
+}
+
+  
+</style>
+<body>
+  
+  <!-- html project section -->
+  <div class="projects">
+  <!-- movies project -->
+    <div class="project-box">
+      <img src="https://img.freepik.com/premium-photo/poster-movie-movie-movie-movie-movie-is-from-movie_1115474-87539.jpg" alt="Project 1">
+      <a href="../html_projects/movies_project/top_movies .html">View Project</a>
+    </div>
+    <!-- resume project -->
+    <div class="project-box">
+  <img src="https://st3.depositphotos.com/3287005/13699/v/450/depositphotos_136992572-stock-illustration-application-form-icon.jpg" alt="Project 2">
+    <a href="../html_projects/form_projects/form1.html">View Project</a>
+    </div>
+    <!-- flag project -->
+    <div class="project-box">
+      <img src="https://i.pinimg.com/474x/84/03/d3/8403d331b1f8d47ade677eeb576cfc75.jpg" alt="Project 3">
+     <a href="../html_projects/exercises_project/flag.html">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="https://t4.ftcdn.net/jpg/09/63/24/23/360_F_963242343_2UnliVVyFLRcCBAmBccjEMTnapHtcKFh.jpg" alt="Project 4">
+      <a href="../html_projects/videos_html/videotable.html">View Project</a>
+    </div>
+   
+  </div>
+</body>
+</html>

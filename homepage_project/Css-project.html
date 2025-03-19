@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  
+/* / Basic Styling / */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;    
+  text-align: center;
+}
+
+/* / Projects Container / */
+.projects {
+  display: flex;
+  flex-wrap: wrap;            
+  justify-content: center;    
+  gap: 20px;                
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* / Project Box Style / */
+.project-box {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 20px); 
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-box h2 {
+  margin: 10px 0;
+}
+
+.project-box a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff007f;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.project-box a:hover {
+  background-color: #e6006e;
+}
+
+/* / Responsive Styles / */
+@media (max-width: 1024px) {
+  .project-box {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .project-box {
+    width: 100%; 
+  }
+}
+
+  
+</style>
+<body>
+  <div class="projects">
+    <div class="project-box">
+      <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/116183173/original/7c74b127345c6817d7d33f28865298806d39ddef/make-excellent-animated-video-for-you-write-a-good-content.jpg" >
+    
+      <a href="">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="project2.jpg" alt="Project 2">
+      <h2>Project 2</h2>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="project3.jpg" alt="Project 3">
+      <h2>Project 3</h2>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="project4.jpg" alt="Project 4">
+      <h2>Project 4</h2>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="project5.jpg" alt="Project 5">
+      <h2>Project 5</h2>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</body>
+</html>

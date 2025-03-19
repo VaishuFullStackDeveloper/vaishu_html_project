@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>documents</title>
+    <style>
+    .main-container{
+    width: 80vw;
+    height: 80vh;
+    background-color:rgba(70, 38, 38, 0.332);
+    margin-left:10%;
+    }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <!-- add two number with javascript -->
+    <form>
+        <p id="demo">Number</p>
+        <button type="button" onclick="myFunction()"> Get number</button>
+        <br>
+        <p id="demo1">Hello-World</p>
+        <button type="button" onclick="document.getElementById('demo1').innerHTML='Enjoy-Programming'"> Click-it</button>
+
+    </form>
+    <script>
+    function myFunction(){
+        x = 10;
+        y = 20;
+        z = x+y;
+        document.getElementById("demo").innerHTML=z;
+
+    }
+
+
+    </script>
+
+</div>
+
+    
+</body>
+</html>

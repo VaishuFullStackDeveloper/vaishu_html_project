@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+    .login-container{
+            width: 40vw;
+            height: 50vh;
+            background-color: rgb(54, 54, 53);
+            margin-left: 30%;
+            
+    }
+    #display{
+        width:70%;
+        height:20%;
+        background-color: rgba(167, 153, 153, 0.75); 
+        margin-left: 14%; 
+        margin-top:20%;
+        border: solid;
+
+         
+    }
+    button{
+        width: 20%;
+        height: 13%;
+        border: double 3px;
+        margin-left: 3.5%;
+    
+    }
+
+    </style>
+    <script>
+
+        function numberType(chintu){
+        document.getElementById("display").innerHTML = chintu;
+        
+        }
+        function addFunction(){
+        document.getElementById("display").innerHTML;
+        }
+        function subFunction(){
+        document.getElementById("display").innerHTML;
+        }
+        function mulFunction(){
+        document.getElementById("display").innerHTML;
+        }
+        function divFunction(){
+        document.getElementById("display").innerHTML;
+        }
+        function equalFunction(){
+        document.getElementById("display").innerHTML;
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="login-container">
+    <p id="display"></p>
+    <button class="btn" onclick="numberType(7)">7</button>
+    <button class="btn" onclick="numberType(8)">8</button>
+    <button class="btn" onclick="numberType(9)">9</button>
+    <button onclick="subFunction()"><p>-</p></button>
+     <br>
+     <br>
+    <button class="btn" onclick="numberType(4)">4</button>
+    <button class="btn" onclick="numberType(5)">5</button>
+    <button class="btn" onclick="numberType(6)">6</button>
+    <button onclick="addFunction()"><p>+</p></button>
+     <br>
+     <br>
+     <button class="btn" onclick="numberType(1)">1</button>
+    <button class="btn" onclick="numberType(2)">2</button>
+    <button class="btn" onclick="numberType(3)">3</button>
+    <button onclick="equalFunction()"><p>=</p></button>
+     
+    <br>
+    <br>
+    <button class="btn" onclick="numberType(0)">0</button>
+    
+   
+    
+    <br>
+    <br>
+    
+    </div>
+
+    
+</body>
+</html>
+
+
+
