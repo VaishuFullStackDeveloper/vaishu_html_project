@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        .column-one {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .column-two {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 2fr;
+        }
+
+        .column-three {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .one {
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+
+        .one-one {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .one1 {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+         .one-four{
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+        }
+        .four{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           
+        }
+      .two-two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      } 
+        .two{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .two-four{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .four1{
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="column-one">
+            <div class="one"></div>
+            <div class="one-one">
+                <div class="one1"></div>
+                <div class="one1"></div>
+            </div>
+
+
+            <div class="one"></div>
+            <div class="one-four">
+                <div class="four"></div>
+                <div class="four"></div>
+            </div>
+        </div>
+        <div class="column-two">
+            <div class="one "></div>
+            <div class="two-two">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="one"></div>
+            <div class="two-four">
+                <div class="four1"></div>
+                <div class="four1"></div>
+            </div>
+        </div>
+        <div class="column-three">
+            <div class="one "></div>
+            <div class="one-one">
+                <div class="one1"></div>
+                <div class="one1"></div>
+
+            </div>
+            <div class="one"></div>
+            <div class="one-four">
+                <div class="four"></div>
+                <div class="four"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

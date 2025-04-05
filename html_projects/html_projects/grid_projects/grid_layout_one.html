@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        /* main-container */
+    .main-container{
+    width: 100vw;
+    height: 100vh;    
+    border: solid;
+    display: grid;
+    }
+    /* row-one-styling */
+   .row-one{
+    border: solid;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   } 
+.first-box{
+    border: solid; 
+}
+.second-box{
+    border: solid; 
+}
+/* row-two-styling */
+.row-two{
+    border: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.third-box{
+    border: solid;     
+}
+.forth-box{
+    border: solid;   
+}
+.forth-box{
+    border: solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+.fifth-box{
+    border: solid;  
+}
+.six-box{
+    border: solid;  
+}  
+/* row-three-styling */
+.row-three{
+    border: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+.seventh-box{
+    border: solid;
+} 
+.eighth-box{
+    border: solid;
+}
+.ninth-box{
+    border: solid;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- first-row -->
+        <div class="row-one">
+            <div class="first-box"></div>
+            <div class="second-box"></div>
+        </div>
+
+        <!-- second row -->
+        <div class="row-two">
+            <div class="third-box"></div>
+            <div class="forth-box">
+                <div class="fifth-box"></div>
+                <div class="six-box"></div>
+            </div>
+        </div>
+        <!-- third row -->
+        <div class="row-three">
+            <div class="seventh-box"></div>
+            <div class="eighth-box"></div>
+            <div class="ninth-box"></div>
+            
+    </div>
+
+</body>
+
+</html>

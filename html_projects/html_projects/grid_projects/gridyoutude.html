@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <!-- styling -->
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+
+        /* left section */
+        .left-box {
+            border-style: solid;
+        }
+
+        /* right section */
+        .right-box {
+            border-style: solid;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .box {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="left-box">
+         <video src="../../assets/videos/big_buck_bunny_720p_2mb.mp4" controls height="100%" width="100%"> </video>
+        </div>
+
+        <!-- right-box -->
+        <div class="right-box">
+            <div class="box">
+                <video src="../../assets/videos/big_buck_bunny_720p_2mb.mp4" controls height="100%" width="100%"></video>
+        </div>
+            <div class="box">
+                <video src="../../assets/videos/big_buck_bunny_720p_2mb.mp4" controls height="100%" width="100%"></video>
+            </div>
+            <video src="../../assets/videos/big_buck_bunny_720p_2mb.mp4" controls height="100%" width="100%"></video></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
