@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>check the numbers</h1>
+    <script>
+
+        const numbers = [1, 2, 3, 4, 5, 6, 7];
+        // console.log(numbers[4]);
+        // console.log(Math.min(1,2,3,4,5,6,7));
+        let i = 0;
+        let greatest = numbers[0];
+        while (i < numbers.length) {
+            if (numbers[i] > greatest) {
+                greatest = numbers[i];
+            }
+            i++;
+
+        }
+        console.log(greatest);
+        document.getElementById('display').innerHTML = greatest;
+
+
+    </script>
+</body>
+
+</html>

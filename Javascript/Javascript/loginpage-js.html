@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+     .login-container{
+            width: 35vw;
+            height: 45vh;
+           background-color:rgb(102, 96, 96);
+           border: solid 1px;
+           margin-left: 30%;
+           margin-top: 10%;
+           
+        }
+    #display{
+            width: 30vw;
+            height: 10vh;
+            border: solid 1px;
+            background-color: rgb(181, 170, 170);
+            margin-left: 10%;
+            margin-top: 12%;
+        }
+    .input-group{
+    width: 10%;
+    height:5%;
+    margin-left:25% ;
+    }
+    button{
+        width: 18%;
+        height: 8%;
+        margin-left:35%;
+        background-color: rgba(139, 139, 63, 0.716);
+    }
+  #input-one{
+    height: 150%;
+    width: 400%;
+  }
+  #input-two{
+    height: 150%;
+    width: 400%;
+  }
+
+
+  
+    </style>
+    <script>
+        function clickFunction(){
+            let x = document.getElementById("input-one").value;
+            let y = document.getElementById("input-two").value;
+            z = Number(x)* Number(y);
+            document.getElementById("display").innerHTML =z;
+    }
+    function clickAc(){
+    document.getElementById("display").innerHTML=""; 
+    }
+    </script>
+    
+    
+</head>
+<body>
+<div class="login-container">
+<p id="display"></p>
+    <div class="input-group">
+        <input type="type" id="input-one" placeholder="input-one">
+    </div>
+    <br>
+    <br>
+<div class="input-group">
+        <input type="type" id="input-two" placeholder="input-two">
+    </div>
+    <br>
+    <br>
+    <button type="button"onclick="clickFunction()">button</button>
+    <br>
+    <button type="button"onclick="clickAc()">Ac</button>
+
+
+</div>    
+    
+</body>
+</html>
