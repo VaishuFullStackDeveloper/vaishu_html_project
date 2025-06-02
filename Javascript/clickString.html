@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Click Example</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:#333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            text-align: center;
+            padding: 30px;
+            background-color:rgb(237, 227, 85);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            
+        }
+
+        button:hover {
+            background-color: #45a049;
+          
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #333;
+            opacity: 0;
+           
+        }
+
+        h1.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <button onclick="showText()">Click me</button>
+        <h1 id="message">Welcome to JavaScript World!</h1>
+    </div>
+
+    <script>
+        function showText() {
+            document.getElementById("message").classList.add("show");
+        }
+    </script>
+</body>
+</html>

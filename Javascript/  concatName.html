@@ -1,0 +1,101 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate Names</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background:lightsteelblue;
+            padding: 30px 40px;
+            border-radius: 10px;
+            border: black solid 2px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #3f2121;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color:rgb(189, 235, 119);
+            color:black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Concate Names</h2>
+    <input type="text" id="firstName" placeholder="Enter First Name">
+    <input type="text" id="secondName" placeholder="Enter Second Name">
+    <button onclick="concatNames()">Concat Two Names</button>
+    <input type="text" id="result" placeholder="Result" readonly>
+</div>
+
+<script>
+    function concatNames() {
+        const firstName = document.getElementById("firstName").value.trim();
+        // const secondName = document.getElementById("secondName").value.trim();
+        // console.log(firstName);
+        //  console.log(secondName);
+        // const result = firstName + " " + secondName;
+        // document.getElementById("result").value = result;
+
+        let firstNamelength= firstName.length
+        alert(firstNamelength);
+
+        let firstNameUpperCase= firstName.toUpperCase();
+        alert(firstNameUpperCase);
+    
+
+        let slicefirstName= firstName.slice(0,5)
+        alert(slicefirstName);
+    }
+    
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+ 
+   
