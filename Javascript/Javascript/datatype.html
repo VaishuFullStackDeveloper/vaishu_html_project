@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+</head>
+<style>
+.main-container{
+width: 50vw;
+height: 80vh;
+background-color: rgb(144, 172, 176);
+margin-left: 25%;
+
+}
+h1{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+button{
+height: 40px;
+background-color: greenyellow;
+margin-left: 40%;
+
+}
+p{
+width:40vw;
+height: 40vh;
+background-color:lightslategrey ;
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left: 70px;
+
+}
+.text{
+margin-bottom: 10px;
+margin-left: 40%;
+
+}
+</style>
+<body>
+    <div class="main-container">
+    <h1>JavaScript Datatype Show</h1>
+    <div class="text">
+    <h4>Enter anything:</h4>
+    <input type="text" placeholder="Enter the name">
+</div>
+    <button onclick="display()">Check Datatype</button>
+    <p id="output"></p>
+</div>
+    <script>
+        function display() {
+            let string = "Good Morning";
+            let dataType = typeof string;
+            alert ("Value is:"+ string +"<br> Datatype is :"+ dataType);
+
+            let output = "String is: " + string + "<br>" + "Datatype is: " + dataType;
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
