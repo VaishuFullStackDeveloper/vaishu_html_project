@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+<h3>First Number:</h3>
+<input type="number" placeholder="Enter first number" id="">
+<h3>First Number:</h3>
+<input type="number" placeholder="Enter first number" id="">
+<br>
+<button onclick="calculator()">Calculate</button>
+<p>Sum</p>
+<p >Sub</p>
+<p >Mul</p>
+<p >Div</p>
+<p>Mod</p>
+</div>  
+</body>
+<script>
+    function calculator(){
+        let num1= document.getElementById("input-one").value;
+        let num2= document.getElementById("input-two").value;
+
+        let sum= num1+num2;
+        document.getElementById("showSum").innerHTML=sum;
+
+        let sub= num1+num2;
+        document.getElementById("showSub").innerHTML=sub;
+
+        let mul= num1+num2;
+        document.getElementById("showMul").innerHTML=mul;
+
+        let div= num1+num2;
+        document.getElementById("showDiv").innerHTML=div;
+
+        let mod= num1+num2;
+        document.getElementById("showMod").innerHTML=mod;
+    }
+
+</script>
+</html>

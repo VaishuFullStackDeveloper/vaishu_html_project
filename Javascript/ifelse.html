@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.main-container{
+    width: 60vw;
+    height: 50vh;
+    background-color: lightpink;
+}
+button{
+margin-left: 33%;
+height: 15%;
+width: 30%;
+background-color: greenyellow;
+}
+</style>
+<body>
+    <div class="main-container">
+    <button onclick="compair()">Click</button>
+
+</div>
+    <script>
+        function compair(){
+            let password= prompt("Enter a number");
+            alert(password=="123456");
+            if(password=="123456"){
+                alert("password is match")
+            }
+            else{
+                alert("Password is not match")
+            }
+        }
+    </script>
+    
+</body>
+</html>
