@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Sign Converter</h1>
+    <p>Enter a number:</p>
+    <input type="number" placeholder="Enter a number" id="numInput">
+    <button onclick="convert()"> Convert Sign</button>
+    <p id="result"></p>
+    <script>
+      function convert(){
+        let num= document.getElementById("numInput"). value;
+        let converted = -num;
+        document.getElementById('result').textContent="Converted number: "+ converted;
+      }  
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Sign Converter</title>
+</head>
+<body>
+    <h1>Number Sign Converter</h1>
+    <p>Enter a number:</p>
+    <input type="number" id="numInput" placeholder="Enter a number">
+    <button onclick="convert()">Convert Sign</button>
+    <p id="result"></p>
+
+    <script>
+        function convert() {
+            let num = document.getElementById("numInput").value;
+            let converted = -num;
+            document.getElementById("result").textContent = "Converted number: " + converted;
+        }
+    </script>
+</body>
+</html> -->
