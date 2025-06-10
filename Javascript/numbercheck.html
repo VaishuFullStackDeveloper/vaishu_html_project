@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- using ternary operator -->
+<body>
+    <!-- <script>
+        let num=Number(prompt("Enter a number:"))
+        if (num==0){
+            alert("Number is zero");
+        }else{
+            let result=num>0?"number is positive ":"number is negative";
+            alert(result);
+        }
+    </script>
+     -->
+    <script>
+        let num=Number(prompt("Enter a number:")) 
+        let result=
+        num==0
+        ?"Number is zero"
+        :num>0
+        ?"Number is positive"
+        :"Number is negative";
+        alert(result);
+    </script>
+</body>
+</html>
