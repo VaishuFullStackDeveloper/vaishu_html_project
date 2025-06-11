@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3x3 Grid Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/* body */
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+/* container */
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+/* row1 styling */
+    .row1 {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      gap: 30px;
+      background-color: #97e2ec;
+    }
+    .one{
+        background-color: darkslategray;
+        flex-grow: 1;
+    }
+    .two{
+        background-color: darkslategray;
+        flex-grow: 2.5;
+    }
+    .three{
+        background-color: darkslategray;
+        flex-grow: 1;
+    }
+    /* row2 styling */
+    .row2 {
+        width: 100%;
+      height: 30%;
+      display: flex;
+      gap: 30px;
+      background-color: #97e2ec;
+    }
+    .four{
+        background-color: darkslategray;
+        flex-grow: 2;
+    }
+    .five{
+        background-color: darkslategray;
+        flex-grow: 1;
+    }
+    .six{
+        background-color: darkslategray;
+        flex-grow: 1;
+    }
+    /* row3 styling */
+    .row3 {
+        width: 100%;
+      height: 30%;
+      display: flex;
+      gap: 30px;
+      background-color: #97e2ec;
+    }
+    
+   
+    .seven{
+        background-color: darkslategray;
+        flex-grow: 1;
+    }
+    .eight{
+        background-color: darkslategray;
+        flex-grow: 1;
+    }
+    .nine{
+        background-color: darkslategray;
+        flex-grow: 2;
+    }
+
+    
+    
+  </style>
+</head>
+<body>
+    <!-- main-container -->
+  <div class="container">
+    <!-- row-one -->
+    <div class="row1">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+    <!-- row-two -->
+    <div class="row2">
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+    </div>
+    <!-- row-three -->
+    <div class="row3">
+      <div class="seven"></div>
+      <div class="eight"></div>
+      <div class="nine"></div>
+    </div>
+  </div>
+</body>
+</html>
