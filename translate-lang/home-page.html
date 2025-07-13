@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            width: 40%;
+            height: 40%;
+            background-color: rgb(122, 113, 113);
+            border-radius: 30px;
+        }
+
+        h1 {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+
+        select {
+            margin-left: 210px;
+            margin-top: 100px;
+            height: 30px;
+            width: 150px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Cloud AI</h1>
+        <p id="paragraph">
+            Cloud AI
+            Cloud AI refers to the integration of Artificial Intelligence (AI) and cloud computing, enabling
+            organizations to leverage AI capabilities through cloud platforms. This fusion allows businesses to access
+            and utilize AI tools, models, and infrastructure without the need for significant upfront investment in
+            hardware or specialized expertise. Cloud AI offers benefits like enhanced automation, improved
+            decision-making, and increased scalability for various business processes
+        </p>
+        <!-- list tag -->
+        <h2 id="admission-process-heading">Admission process steps</h2>
+        <ol id="admission-process-list">
+            <li>Reasearch collage and courses</li>
+            <li>fill out application form</li>
+            <li>Appears for enterance </li>
+            <li>attend counselling sessions</li>
+            <li>submit required documents and fee</li>
+        </ol>
+
+        <select name="language" id="select-lang" onchange="translateLanguage()">
+            <option value="English">English</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Spanish">Spanish</option>
+        </select>
+
+    </div>
+    <!-- language files path -->
+    <script src="./english-data.js"></script>
+    <script src="./marathi-data.js"></script>
+    <script src="./hindi-data.js"></script>
+    <script src="./spanish-data.js"></script>
+
+    <script>
+        const translate = {
+            English: englishData,
+            Marathi: marathiData,
+            Hindi: hindiData,
+            Spanish: spanishData
+        };
+
+        function translateLanguage() {
+            const selectLanguage = 
+            document.getElementById("select-lang").value;
+            let result = translate[selectLanguage];
+            document.getElementById("heading").innerHTML = result.heading;
+            document.getElementById("paragraph").innerHTML = result.paragraph;
+            document.getElementById("admission-process-heading").innerHTML = result.admission_process_heading;
+            document.getElementById("admission-process-list").innerHTML = result.admission_process_list;
+
+            localStorage.setItem("seletedLanguage",selectLanguage);
+        }
+        window.onload = function(){
+            let savedlanguage = localStorage.getItem("seletedLanguage");
+            document.getElementById("select-lang").value= savedlanguage;
+            translateLanguage();
+        };
+    </script>
+</body>
+
+</html>
