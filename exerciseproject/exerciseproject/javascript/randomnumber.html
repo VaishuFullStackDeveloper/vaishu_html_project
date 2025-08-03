@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your name" id="name">
+    <input type="date" placeholder="Enter your dob" id="dob">
+    <input type="number" placeholder="Enter your user id" id="userid">
+    <button onclick="allSubmit()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+
+        function getInputValue(id) {
+            return document.getElementById(id).value;
+        }
+
+
+        function calculateAge(dob) {
+            const birthDate = new Date(dob);
+            return new Date().getFullYear() - birthDate.getFullYear();
+        }
+
+
+        function allSubmit() {
+            const name = getInputValue("name");
+            const dob = getInputValue("dob");
+            const userid = getInputValue("userid");
+
+
+            const age = dob ? calculateAge(dob) : 'Invalid input';
+
+
+            document.getElementById("output").textContent = name && dob
+                ? `Hello ${name}, your age is ${age} and your user ID is ${userid}.`
+                : "Please enter all details";
+        }
+    </script>
+
+</body>
+
+</html>

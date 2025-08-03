@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Number Finder</title>
+</head>
+
+<body>
+    <h1>Lottery Number Finder</h1>
+
+    <p>Lottery Number 1</p>
+    <button onclick="randomNumber()">Result</button>
+    <p id="output1"></p>
+
+    <p>Lottery Number 2</p>
+    <button onclick="randomNumber1()">Result</button>
+    <p id="output2"></p>
+
+    <p>Lottery Number 3</p>
+    <button onclick="randomNumber2()">Result</button>
+    <p id="output3"></p>
+
+    <script>
+        function randomNumber() {
+            const number = Math.floor(Math.random() * 10) ;  
+            document.getElementById("output1").textContent =number;
+        }
+
+        function randomNumber1() {
+            const number = Math.floor(Math.random() * 10) ;  
+            document.getElementById("output2").textContent = number;
+        }
+
+        function randomNumber2() {
+            const number = Math.floor(Math.random() * 10) ;  
+            document.getElementById("output3").textContent =  number;
+        }
+        
+        
+    </script>
+
+</body>
+
+</html>
